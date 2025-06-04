@@ -7,29 +7,29 @@ import { SOCIAL_LINKS } from '../constants';
 
 const HowToBuy: React.FC = () => {
   return (
-    <Section id="comprar" title="Como se Juntar à Família Casper?" subtitle="Adquirir Casper Coin é mais fácil que assustar uma criança (brincadeirinha, somos camaradas!)." className="bg-sky-100">
+    <Section id="how-to-buy" title="How to Join the Casper Family?" subtitle="Getting Casper Coin is easier than scaring a child (just kidding, we're friendly!)." className="bg-sky-100">
       <div className="max-w-3xl mx-auto text-center">
         <Card className="mb-8 shadow-xl">
-          <h3 className="text-2xl font-semibold text-casper-teal mb-4">Compre na Pump.fun!</h3>
+          <h3 className="text-2xl font-semibold text-casper-teal mb-4">Buy on Pump.fun!</h3>
           <p className="text-lg text-slate-700 mb-6">
-            Casper Coin foi lançado de forma justa e transparente na plataforma <strong className="text-sky-600">Pump.fun</strong>. É o lugar perfeito para pegar seus Caspers enquanto eles ainda são filhotes de fantasma!
+            Casper Coin was launched fairly and transparently on the <strong className="text-sky-600">Pump.fun</strong> platform. It's the perfect place to grab your Caspers while they're still baby ghosts!
           </p>
-          <img src="https://picsum.photos/seed/pumpfun/600/300" alt="Pump.fun illustration" className="rounded-lg mb-6 mx-auto shadow-md" />
+          <img src="https://freeimage.host/i/gemini-generated-image-1f8cft1f8cft1f8c.FdYbeKQ" alt="Guide on how to buy Casper Coin on Pump.fun" className="rounded-lg mb-6 mx-auto shadow-md w-full max-w-md object-contain" />
           <p className="text-slate-600 mb-6">
-            Pump.fun permite lançamentos de moedas de forma simples e segura, com liquidez inicial bloqueada. Perfeito para projetos comunitários como o nosso!
+            Pump.fun allows for simple and secure coin launches, with initial liquidity locked. Perfect for community projects like ours!
           </p>
           <Button href={SOCIAL_LINKS.PUMP_FUN} target="_blank" rel="noopener noreferrer" variant="primary" size="lg">
-            Ir para Pump.fun e Comprar Casper
+            Go to Pump.fun and Buy Casper
           </Button>
            <p className="mt-4 text-xs text-slate-500">
-            (Certifique-se de ter uma carteira Solana como Phantom e SOL para as transações)
+            (Make sure you have a Solana wallet like Phantom and SOL for transactions)
           </p>
         </Card>
         
         <div className="mt-12">
-            <h4 className="text-xl font-semibold text-slate-700 mb-3">Por que Pump.fun?</h4>
+            <h4 className="text-xl font-semibold text-slate-700 mb-3">Why Pump.fun?</h4>
             <p className="text-slate-600">
-                Escolhemos a Pump.fun para o lançamento inicial do Casper Coin por sua simplicidade e foco na comunidade. Ela permite que projetos como o nosso ganhem tração de forma orgânica e justa. Após atingir um certo volume, a moeda pode migrar para plataformas maiores como Raydium, com liquidez garantida.
+                We chose Pump.fun for the initial launch of Casper Coin due to its simplicity and community focus. It allows projects like ours to gain traction organically and fairly. After reaching a certain volume, the coin can migrate to larger platforms like Raydium, with guaranteed liquidity.
             </p>
         </div>
       </div>

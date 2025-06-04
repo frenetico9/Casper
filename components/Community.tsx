@@ -16,12 +16,12 @@ const TwitterIcon = ({ className }: { className?: string }) => (
 
 const Community: React.FC = () => {
   return (
-    <Section id="comunidade" title="Junte-se à Nossa Assombração Amigável!" subtitle="A comunidade Casper te espera de braços (ou tentáculos?) abertos!">
+    <Section id="community" title="Join Our Friendly Haunting!" subtitle="The Casper community awaits you with open arms (or tentacles?)!">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <UsersIcon className="w-20 h-20 text-casper-teal mx-auto mb-4" />
           <p className="text-lg text-slate-600">
-            O coração de Casper Coin bate forte graças à nossa comunidade. Participe das discussões, compartilhe suas ideias para memes fantasmagóricos, e ajude a moldar o futuro do nosso fantasminha camarada.
+            The heart of Casper Coin beats strong thanks to our community. Join the discussions, share your ideas for spooky memes, and help shape the future of our friendly little ghost.
           </p>
         </div>
 
@@ -32,7 +32,7 @@ const Community: React.FC = () => {
                 <TelegramIcon className="w-12 h-12 text-sky-500" />
                 <div>
                   <h4 className="text-xl font-semibold text-sky-600">Telegram</h4>
-                  <p className="text-slate-500">Nosso quartel-general fantasma! Notícias, bate-papo e muita zoeira.</p>
+                  <p className="text-slate-500">Our ghost headquarters! News, chat, and lots of fun.</p>
                 </div>
               </div>
             </div>
@@ -43,7 +43,7 @@ const Community: React.FC = () => {
                 <TwitterIcon className="w-12 h-12 text-blue-500" />
                 <div>
                   <h4 className="text-xl font-semibold text-blue-600">Twitter / X</h4>
-                  <p className="text-slate-500">Fique por dentro das últimas novidades e memes espectrais em 280 caracteres.</p>
+                  <p className="text-slate-500">Stay up to date with the latest news and spectral memes in 280 characters.</p>
                 </div>
               </div>
             </div>
@@ -51,7 +51,7 @@ const Community: React.FC = () => {
         </div>
         <div className="text-center mt-12">
             <Button href={SOCIAL_LINKS.PUMP_FUN} target="_blank" rel="noopener noreferrer" variant="primary" size="lg">
-                Veja Casper na Pump.fun
+                See Casper on Pump.fun
             </Button>
         </div>
       </div>

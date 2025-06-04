@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { APP_NAME, SOCIAL_LINKS } from '../constants';
+import { APP_NAME, SOCIAL_LINKS, NAVIGATION_LINKS } from '../constants';
 import CasperFriendlyGhostLogo from './Logo';
 
 const Footer: React.FC = () => {
@@ -15,21 +15,21 @@ const Footer: React.FC = () => {
               <CasperFriendlyGhostLogo size={40} />
               <span className="font-brand text-2xl text-white">{APP_NAME}</span>
             </div>
-            <p className="text-sm text-slate-400 text-center md:text-left">O fantasminha camarada do blockchain.</p>
+            <p className="text-sm text-slate-400 text-center md:text-left">The friendly blockchain ghost.</p>
           </div>
           
           <div>
-            <h5 className="text-lg font-semibold text-white mb-3 text-center md:text-left">Links Rápidos</h5>
+            <h5 className="text-lg font-semibold text-white mb-3 text-center md:text-left">Quick Links</h5>
             <ul className="space-y-2 text-center md:text-left">
-              <li><a href="#sobre" className="hover:text-casper-teal transition-colors">Sobre</a></li>
-              <li><a href="#roadmap" className="hover:text-casper-teal transition-colors">Roadmap</a></li>
-              <li><a href="#comprar" className="hover:text-casper-teal transition-colors">Como Comprar</a></li>
+              {NAVIGATION_LINKS.map(link => (
+                <li key={link.href}><a href={link.href} className="hover:text-casper-teal transition-colors">{link.label}</a></li>
+              ))}
               <li><a href={SOCIAL_LINKS.PUMP_FUN} target="_blank" rel="noopener noreferrer" className="hover:text-casper-teal transition-colors">Pump.fun</a></li>
             </ul>
           </div>
 
           <div>
-            <h5 className="text-lg font-semibold text-white mb-3 text-center md:text-left">Conecte-se</h5>
+            <h5 className="text-lg font-semibold text-white mb-3 text-center md:text-left">Connect</h5>
              <div className="flex justify-center md:justify-start space-x-4">
                 <a href={SOCIAL_LINKS.TELEGRAM} target="_blank" rel="noopener noreferrer" aria-label="Telegram" className="text-slate-400 hover:text-sky-400 transition-colors">
                     <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23.02-.25c-.04-.03-.09-.05-.14-.05s-.09.02-.14.05L5.14 16.1c-.1.09-.01.25.12.28l4.52 1.27zm2.93.24l1.04-4.94c.04-.16-.1-.3-.25-.24l-6.32 2.43c-.16.06-.16.3 0 .36l4.48 1.71 1.05 4.94c.04.16.25.16.3 0zM21.36 3.22a.75.75 0 00-1.02-.64L2.74 9.04c-.16.06-.16.3 0 .37l5.44 1.96 1.96 5.44c.06.16.3.16.37 0l6.46-16.6c.04-.12-.02-.24-.1-.31z"/></svg>
@@ -43,10 +43,10 @@ const Footer: React.FC = () => {
         
         <div className="border-t border-slate-700 pt-8 text-center">
           <p className="text-sm text-slate-400">
-            &copy; {currentYear} {APP_NAME}. Todos os direitos (assombrados) reservados.
+            &copy; {currentYear} {APP_NAME}. All (haunted) rights reserved.
           </p>
           <p className="text-xs text-slate-500 mt-2">
-            Lembre-se: Criptomoedas são investimentos de alto risco. Invista com responsabilidade e apenas o que você pode perder. Casper Coin é uma memecoin criada para diversão e comunidade.
+            Remember: Cryptocurrencies are high-risk investments. Invest responsibly and only what you can afford to lose. Casper Coin is a memecoin created for fun and community.
           </p>
         </div>
       </div>

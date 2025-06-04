@@ -12,13 +12,13 @@ export const SOCIAL_LINKS = {
 };
 
 export const NAVIGATION_LINKS: NavLink[] = [
-  { href: "#sobre", label: "Sobre" },
+  { href: "#about", label: "About" },
   { href: "#roadmap", label: "Roadmap" },
-  { href: "#comprar", label: "Como Comprar" },
-  { href: "#comunidade", label: "Comunidade" },
+  { href: "#how-to-buy", label: "How to Buy" },
+  { href: "#community", label: "Community" },
 ];
 
-interface IconProps {
+export interface IconProps {
   className?: string;
   "aria-hidden"?: React.AriaAttributes['aria-hidden'];
 }

@@ -7,34 +7,34 @@ import { GhostIcon, RocketIcon, UsersIcon, PuzzleIcon } from '../constants';
 
 const roadmapItems: RoadmapItem[] = [
   {
-    id: 'fase1',
-    phase: 'Fase 1',
-    title: 'O Início Fantasmagórico',
-    description: 'Lançamento na pump.fun, criação dos canais sociais e formação da nossa incrível comunidade inicial. É aqui que a magia começa!',
+    id: 'phase1',
+    phase: 'Phase 1',
+    title: 'The Spooky Start',
+    description: 'Launch on pump.fun, creation of social channels, and formation of our amazing initial community. This is where the magic begins!',
     icon: <GhostIcon className="w-10 h-10" />,
     color: 'text-teal-500',
   },
   {
-    id: 'fase2',
-    phase: 'Fase 2',
-    title: 'Aparições Amigáveis',
-    description: 'Crescimento da comunidade através de marketing criativo (memes, concursos!), parcerias iniciais e fortalecimento da nossa presença online. Vamos mostrar ao mundo quem somos!',
+    id: 'phase2',
+    phase: 'Phase 2',
+    title: 'Friendly Apparitions',
+    description: 'Community growth through creative marketing (memes, contests!), initial partnerships, and strengthening our online presence. Let\'s show the world who we are!',
     icon: <UsersIcon className="w-10 h-10" />,
     color: 'text-sky-500',
   },
   {
-    id: 'fase3',
-    phase: 'Fase 3',
-    title: 'Expansão Etérea',
-    description: 'A comunidade vota nas primeiras utilidades e projetos para Casper Coin. Exploração de listagens em corretoras (CEX/DEX) e iniciativas de maior impacto, tudo decidido em conjunto.',
+    id: 'phase3',
+    phase: 'Phase 3',
+    title: 'Ethereal Expansion',
+    description: 'The community votes on the first utilities and projects for Casper Coin. Exploration of exchange listings (CEX/DEX) and higher-impact initiatives, all decided together.',
     icon: <RocketIcon className="w-10 h-10" />,
     color: 'text-emerald-500',
   },
   {
-    id: 'fase4',
-    phase: 'Fase 4',
-    title: 'Além do Véu: O Futuro é Nosso!',
-    description: 'O futuro de Casper Coin é um livro aberto, escrito por todos nós. Implementação de governança comunitária (Casper DAO?) e desenvolvimento contínuo baseado nas decisões da comunidade. O céu (ou o além?) é o limite!',
+    id: 'phase4',
+    phase: 'Phase 4',
+    title: 'Beyond the Veil: The Future is Ours!',
+    description: 'The future of Casper Coin is an open book, written by all of us. Implementation of community governance (Casper DAO?) and continuous development based on community decisions. The sky (or the beyond?) is the limit!',
     icon: <PuzzleIcon className="w-10 h-10" />,
     color: 'text-purple-500',
   },
@@ -42,7 +42,7 @@ const roadmapItems: RoadmapItem[] = [
 
 const Roadmap: React.FC = () => {
   return (
-    <Section id="roadmap" title="Nosso Mapa Assombrado (Roadmap)" subtitle="Guiado pela comunidade, para a comunidade. Este é apenas o começo da nossa jornada fantástica!">
+    <Section id="roadmap" title="Our Haunted Map (Roadmap)" subtitle="Guided by the community, for the community. This is just the beginning of our fantastic journey!">
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
         {roadmapItems.map((item, index) => (
           <Card key={item.id} className="flex flex-col h-full border-t-4 border-casper-teal">
@@ -56,7 +56,7 @@ const Roadmap: React.FC = () => {
         ))}
       </div>
        <p className="text-center text-slate-500 mt-12 text-sm">
-        *Lembre-se: este roadmap é flexível e será moldado pela nossa comunidade. Sua voz é fundamental!
+        *Remember: this roadmap is flexible and will be shaped by our community. Your voice is crucial!
       </p>
     </Section>
   );
