@@ -13,11 +13,11 @@ const About: React.FC = () => {
         </div>
         <div className="space-y-6">
           <p className="text-lg text-slate-600 leading-relaxed">
-            <strong>Casper Coin</strong> was born from the union of two incredible ideas: the revolutionary technology of <strong>Kaspa</strong> and the timeless charm of <strong>Casper the Friendly Ghost</strong>. We're not just another digital coin; we are a vibrant community, ready to have fun and build something special in the crypto universe.
+            <strong>Casper Coin</strong> draws its inspiration from two incredible ideas: the innovative spirit of the crypto world and the timeless charm of <strong>Casper the Friendly Ghost</strong>. We're not just another digital coin; we are a vibrant community, ready to have fun and build something special in the crypto universe.
           </p>
           <Card className="bg-teal-50">
             <h4 className="text-lg font-semibold text-casper-teal mb-2">Our Inspiration:</h4>
-            <p>Just like Casper the Friendly Ghost loves making friends, our memecoin aims to create bonds, promote unity, and, of course, bring a bit of lightheartedness and fun to the volatile crypto market. Kaspa's robustness inspires us to dream big, but with our feet (or should we say... chains?) on the ground.</p>
+            <p>Just like Casper the Friendly Ghost loves making friends, our memecoin aims to create bonds, promote unity, and, of course, bring a bit of lightheartedness and fun to the volatile crypto market. The constant innovation in the crypto space inspires us to dream big, always grounded by our friendly and community-focused approach.</p>
           </Card>
           <Card className="bg-sky-50">
             <h4 className="text-lg font-semibold text-sky-600 mb-2">Community First:</h4>
