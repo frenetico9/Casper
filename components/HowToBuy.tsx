@@ -14,7 +14,7 @@ const HowToBuy: React.FC = () => {
           <p className="text-lg text-slate-700 mb-6">
             Casper Coin was launched fairly and transparently on the <strong className="text-sky-600">Pump.fun</strong> platform. It's the perfect place to grab your Caspers while they're still baby ghosts!
           </p>
-          <img src="https://freeimage.host/i/gemini-generated-image-1f8cft1f8cft1f8c.FdYbeKQ" alt="Guide on how to buy Casper Coin on Pump.fun" className="rounded-lg mb-6 mx-auto shadow-md w-full max-w-md object-contain" />
+          <img src="assets/casper-pumpfun-guide.png" alt="Guide on how to buy Casper Coin on Pump.fun" className="rounded-lg mb-6 mx-auto shadow-md w-full max-w-md object-contain" />
           <p className="text-slate-600 mb-6">
             Pump.fun allows for simple and secure coin launches, with initial liquidity locked. Perfect for community projects like ours!
           </p>
