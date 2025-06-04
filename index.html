@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casper Coin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'casper-teal': '#82C3BE', // LOGO_TEAL_COLOR from constants.ts
+            },
+            fontFamily: {
+              'brand': ['Nunito', 'Arial', 'sans-serif'], // Using Nunito as the brand font
+            },
+            animation: {
+              'bounce-slow': 'bounce_slow_kf 3s infinite',
+            },
+            keyframes: {
+              'bounce_slow_kf': {
+                '0%, 100%': {
+                  transform: 'translateY(-3%)',
+                  animationTimingFunction: 'cubic-bezier(0.8,0,1,1)',
+                },
+                '50%': {
+                  transform: 'translateY(0)',
+                  animationTimingFunction: 'cubic-bezier(0,0,0.2,1)',
+                },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom global utility for gradient text */
+      .gradient-text {
+        background-clip: text;
+        -webkit-background-clip: text; /* For Safari */
+        color: transparent;
+        background-image: linear-gradient(to right, #82C3BE, #38A3A5); /* Casper Teal to a darker teal */
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!-- Bundled JS will be injected here by the build process, referencing index.tsx -->
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
